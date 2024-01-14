@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=PT+Sans:ital@1&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:rgb(90, 12, 20) ;
+    height: 45px;
+    font-family: 'Mooli', sans-serif;
+}
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin-top: 34px;
+}
+.line{
+    background-color: rgb(90 12 15);
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    transform: translate(5vw,15vw) rotate(90deg);
+    transition: width 0.5s ease-in;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    text-align: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(211, 231, 255) ;
+}
+.imgbox img{
+    width:0px;
+    transition: width 0.5s ease-in;
+    margin-top: 12px;
+}
+.infobox{
+    margin-top: 12px;
+    padding: 0 34px;
+    text-align: center;
+}
+.bt-0{
+    border-top: none;
+}
+.bl-0{
+    border-left: none;
+}
+.br-0{
+    border-right: none;
+}
+
+.bb-0{
+    border-bottom: none;
+}
+.infoandreset{
+    margin-top: 12px;
+}
+.player{
+    margin: 8px;
+}
+.playerinput{
+    padding: 4px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#setbutton{
+    padding: 4px 42px;
+    border-radius: 12px;
+    
+}
+#setbutton:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#swapplayer{
+    padding: 4px 42px;
+    border-radius: 12px;    
+}
+#swapplayer:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#reset{
+    margin: 0px 12px;
+    padding: 5px 12px;
+    border-radius: 12px;
+    background-color: rgb(255, 219, 255);
+    cursor: pointer;
+}
+#reset:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+}
