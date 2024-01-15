@@ -108,6 +108,7 @@ function resetEvent(){
         element.innerText="";
     })
     turn="X"
+    nameturn=player1;
     document.getElementsByClassName("info")[0].innerText="Turn for "+player1;
     isgameover=false;
     document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width="0px";
